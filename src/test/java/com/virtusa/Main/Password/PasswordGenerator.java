@@ -6,7 +6,7 @@ public class PasswordGenerator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		String rawPassword = "ajeet@0404";
+		String rawPassword = "anusha@0707";
 		String encodedPassword = encoder.encode(rawPassword);
 		System.out.println(encodedPassword);
 
