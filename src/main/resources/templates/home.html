@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>List Users</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+ -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+				integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+				crossorigin="anonymous">	
+ <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style>
+		p.center{ font-size: 22px; color:white;
+		}
+body {
+  background-color: #dbecff;
+}
+</style>
+<style>
+			* {
+				padding: 0;
+				margin: 0;
+				text-decoration: one;
+				list-style: none;
+			}
+			body{
+            background:url("adminIndex.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            
+        }
+        
+
+			body {
+				font-family: green;
+			}
+
+			nav {
+				height: 80px;
+				width: 100%;
+				background: green;
+			}
+
+			label.logo {
+				font-size: 35px;
+				font-weight: bold;
+				color: white;
+				padding: 0 100px;
+				line-height: 80px;
+			}
+
+			nav ul {
+				float: right;
+				margin-right: 40px;
+			}
+
+			nav li {
+				display: inline-block;
+				margin: 0 8px;
+				line-height: 80px;
+			}
+
+			nav a {
+				color: white;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+		</style>
+		<nav>
+     <label class="logo">Connect Globe</label>
+     </nav>
+
+		
+	     <h3><a  th:href="@{/posts}">Create Post</a></h3>	
+	     <h3><a  th:href="@{/viewPost}">View Post</a></h3>
+         <h3><a  th:href="@{/advices}">Give Advice</a></h3>	
+         <h3><a  th:href="@{/viewAdvice}">View Advice</a></h3>		
+         <h3><a  th:href="@{/topics}">Create Topic</a></h3>
+         <h3><a  th:href="@{/viewTopic}">View Topics</a></h3>	
+		 <h3><a  th:href="@{/reports}">Report</a></h3>
+	
+
+</html>

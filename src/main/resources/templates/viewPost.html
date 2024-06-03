@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Posts</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style>
+p.center {
+	font-size: 22px;
+	color: white;
+}
+
+body {
+	background-color: #dbecff;
+}
+</style>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: one;
+	list-style: none;
+}
+
+body {
+	background: url("adminIndex.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body {
+	font-family: green;
+}
+
+nav {
+	height: 80px;
+	width: 100%;
+	background: green;
+}
+
+label.logo {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	padding: 0 100px;
+	line-height: 80px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 40px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+
+nav a {
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+</style>
+<nav>
+	<label class="logo">Connect Globe</label>
+	<body>
+		<div class="container text-center">
+			<div style="color: white;">
+				<h1>List of Posts</h1>
+			</div>
+			<div>
+				<table class="table table-striped table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Post Id</th>
+							<th>User name</th>
+							<th>Text</th>
+
+						</tr>
+					</thead>
+					<tbody style="color: white;">
+						<tr th:each="post: ${listOfPosts}">
+							<td th:text="${post.id}">Post id</td>
+							<td th:text="${post.username}">User name</td>
+							<td th:text="${post.text}">Text</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
